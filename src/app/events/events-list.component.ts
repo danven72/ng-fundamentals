@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'events-list',
   templateUrl: './events-list.component.html'
+
 })
 export class EventsListComponent  {
 
-  title = "Events";
+  title = "Upcoming Angular Events";
 
   eventObj = {
     id: 1,
