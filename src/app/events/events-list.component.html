@@ -1,14 +1,4 @@
 <div>
-    <h1>Events</h1>
-    <div>
-        <span *ngIf="listShowable()">Button clicked: &nbsp;&nbsp;</span>
-        <button  title="remove {{buttonClicked}}"  *ngFor="let buttonClicked of buttonClickedList; let i = index"  type="button" class="btn btn-secondary btn-sm" (click)="remove(i)" style="background-color: transparent; margin-left: -1.0%;">
-            <span class="badge badge-pill badge-info">{{buttonClicked}}</span>            
-        </button>
-    </div>    
-    <hr>
-    <event-thumbnail (eventClick)="handleEventClicked($event)"  
-                                  *ngFor="let eventElem of eventsList"   
-                                  [event]="eventElem" >
-    </event-thumbnail>
+    <h1>{{title}}</h1>
+    <event-thumbnail [event]="eventObj" ></event-thumbnail>
 </div>
