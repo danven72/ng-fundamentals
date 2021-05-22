@@ -1,9 +1,10 @@
 <div class="well hoverwell thumbnail">
-    <h2>{{event.name}}</h2>
-    <div><b>Date:</b> {{event.date}}</div>
-    <div><b>Price:</b> ${{event.price}}</div>
+    <h2>{{event?.name}}</h2>
+    <div><b>Date:</b> {{event?.date}}</div>
+    <div><b>Price:</b> ${{event?.price}}</div>
     <div>
-        <span><b>Location:</b> {{event.location.address}}</span>
-        <span class="pad-left">{{event.location.city}}, {{event.location.country}}</span>
+        <span><b>Location:</b> {{event?.location?.address}}</span>
+        <span class="pad-left">{{event?.location?.city}} {{event?.location?.country}}</span>
     </div>
+    <div><b>Online URL: {{event?.onlineUrl}}</b></div>
 </div>
